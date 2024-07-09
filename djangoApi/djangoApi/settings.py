@@ -136,4 +136,5 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     # Add other origins if necessary
+    'https://my-scheam-gov.vercel.app'
 ]
