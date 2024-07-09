@@ -90,3 +90,7 @@ def get_recommendations(search_terms: str, age: str, social_category: str, gende
     recommendations = rec.iloc[unique_recommendations].fillna("").to_dict('records')
     
     return recommendations
+
+# Ensure preprocessed data and vectorizer are loaded at start-up to avoid repeated computation
+rec, vectorizer, tfidf_matrix = load_data_and_vectorizer()
+
